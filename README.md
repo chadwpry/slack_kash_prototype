@@ -64,11 +64,11 @@ SLACK_VERIFICATION_TOKENS=<token>,<token>
 ### Spin up the Postgres and Redis
 
 We will need database storage for our application to maintain stateful
-information. I choose Postgresql for our database and Redis for data storage
+information. I chose Postgresql for our database and Redis for data storage
 relating to our background job processing. Use the command below to start
 the database servers. This will need to be accomplished each time you start
 development. You can taylor this expectation by running docker-compose up as
-a daemon process within your script/server. I choose not to run a daemon
+a daemon process within your script/server. I chose not to run a daemon
 process to have more flexibility in shutting down components of the application
 individually.
 
