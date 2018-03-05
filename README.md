@@ -21,7 +21,7 @@ docker for setup of our databases in the application environment.
 
 ### Create a Slack App
 
-Kash requires aan application is setup within Slack. If you are not yet
+Kash requires an application is setup within Slack. If you are not yet
 familiar with how to create a Slack App, the link below will help.
 Keep in mind you will need to create a Slack account to create apps.
 
