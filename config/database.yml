@@ -1,0 +1,22 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  host: localhost
+  port: 5432
+  database: kash_development
+
+test:
+  <<: *default
+  host: localhost
+  port: 5432
+  database: kash_test
+
+production:
+  <<: *default
+  database: kash_production
+  username: kash
+  password: <%= ENV['KASH_DATABASE_PASSWORD'] %>
