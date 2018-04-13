@@ -1,5 +1,4 @@
 brew "rbenv"
 brew "ruby-build"
 brew "docker-compose"
-cask "ngrok"
 brew "jq"
