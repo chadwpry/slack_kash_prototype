@@ -8,9 +8,7 @@ jobs:
     docker:
       - image: google/cloud-sdk
     steps:
-      - run:
-        name: Store Service Account
-        command: echo $GCLOUD_SERVICE_KEY > ${HOME}/gcloud-service-key.json
+      - run: echo $GCLOUD_SERVICE_KEY > ${HOME}/gcloud-service-key.json
 
 workflows:
   version: 2
