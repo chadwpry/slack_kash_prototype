@@ -12,6 +12,12 @@ jobs:
         name: Store Service Account
         command: echo $GCLOUD_SERVICE_KEY > ${HOME}/gcloud-service-key.json
 
+workflows:
+  version: 2
+  deeploy:
+    jobs:
+      - deploy-job
+
 #  build:
 #    environment:
 #      DEBIAN_FRONTEND: noninteractive
